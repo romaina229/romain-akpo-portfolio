@@ -12,39 +12,6 @@ The portfolio presents both dimensions of the profile:
 
 The portfolio presents seven entries: Finance Pro, MenstruAI Bénin, Shalom Digital Solutions, MUTLOG, Mila Logistique, Super-garage and Expertise A+ (contribution still to confirm). BCC-Center is listed as a reference, not as a project: the owner delivered ODK / KoboCollect / advanced Excel training sessions there in May–June 2024 (certificate of 17 June 2024). Live links: Finance Pro, MenstruAI, MUTLOG, Mila Logistique, Expertise A+ and ASK Services (PHP version of Super-garage, link to be confirmed). Project data lives in `src/data/projects.js` (FR + EN, one status per project). Their maturity and the exact contribution are not identical; the website therefore avoids describing all of them as completed products.
 
-## Desktop screenshots
-
-The sandbox used to prepare this version could not open the live sites, so desktop captures are generated locally:
-
-```bash
-npm install
-npx playwright install chromium
-npm run screenshots
-```
-
-Files land in `public/images/projects/desktop/` and are picked up automatically; mobile captures remain the fallback.
-
-## Run locally
-
-```bash
-npm install
-npm run dev
-```
-
-## Production build
-
-```bash
-npm run build
-npm run preview
-```
-
-## Deploy on Vercel
-
-- Framework preset: Vite
-- Build command: `npm run build`
-- Output directory: `dist`
-- No environment variables are required for this static portfolio.
-
 ## Repository contents
 
 - `src/`: React application and styles.
